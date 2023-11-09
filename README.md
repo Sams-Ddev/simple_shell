@@ -1,4 +1,4 @@
-#SIMPLE SHELL
+# SIMPLE SHELL
 
 ![Simple shell Logo](https://velog.velcdn.com/images/leejaylight/post/7d11ca3b-f182-4724-a91f-bc39691b249c/%EA%B7%B8%EB%A6%BC1.png)
 
