@@ -18,7 +18,7 @@ The Simple Shell project aims to create a basic command-line interpreter similar
 - Basics of C programming
 - Basics of thinking like an engineer
 - Group work
-- Learning how to learn 
+- Learning how to learn
 
 ## IMPORTANT GUIDELINES
 

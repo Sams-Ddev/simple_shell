@@ -43,15 +43,17 @@ extern char **environ;
  */
 typedef struct linkdList
 {
-        int num;
-        char *strng;
-        struct linkdList *next;
+	int num;
+	char *strng;
+	struct linkdList *next;
 } list_t;
 
 /**
- *struct passArg_info - contains  a huge list of pseudo-arguements to pass into a function,
- *              allowing a formerd, uniform prototype for function pointer struct
- *@arg: the string literals generated from getline() mfunctions containing arguements
+ *struct passArg_info - contains  a huge list of pseudo-arguements to
+ *pass into a function,
+ *allowing a formerd, uniform prototype for function pointer struct
+ *@arg: the string literals generated from getline() mfunctions
+ *containing arguements
  *@argv: the array of string literals generated from arg.
  *@path: a strings path for the current working command
  *@argc: the argument count
@@ -72,25 +74,25 @@ typedef struct linkdList
  */
 typedef struct passArg_info
 {
-        char *arg;
-        char **argv;
-        char *path;
-        int argc;
-        unsigned int line_count;
-        int err_num;
-        int linecount_flag;
-        char *fname;
-        list_t *env;
-        list_t *history;
-        list_t *alias;
-        char **environ;
-        int env_changed;
-        int status;
+	char *arg;
+	char **argv;
+	char *path;
+	int argc;
+	unsigned int line_count;
+	int err_num;
+	int linecount_flag;
+	char *fname;
+	list_t *env;
+	list_t *history;
+	list_t *alias;
+	char **environ;
+	int env_changed;
+	int status;
 
-        char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
-        int cmd_buf_type; /* CMD_type ||, &&, ; */
-        int readfd;
-        int histcount;
+	char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
+	int cmd_buf_type; /* CMD_type ||, &&, ; */
+	int readfd;
+	int histcount;
 } info_t;
 
 
@@ -101,8 +103,8 @@ typedef struct passArg_info
  */
 typedef struct builtin
 {
-        char *type;
-        int (*func)(info_t *);
+	char *type;
+	int (*func)(info_t *);
 } builtin_Table;
 
 /* —------------shell_loop functions —------------*/

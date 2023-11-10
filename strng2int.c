@@ -10,7 +10,7 @@
 
 int interactiveMode(info_t *info)
 {
-	return (isatty(STDIN_FILENO)&& info->readfd <= 2);
+	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
 
 /**
@@ -44,7 +44,8 @@ int AlphabetCheck(int c)
 /**
  *strng2Int - Transforms a string into an integer.
  *@s: The string to undergo conversion.
- *Return: Returns 0 if there are no numbers in the string; otherwise, provides the converted number.
+ *Return: Returns 0 if there are no numbers in the string; otherwise,
+ *provides the converted number.
  */
 
 int strng2Int(char *s)
