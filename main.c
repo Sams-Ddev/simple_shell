@@ -29,6 +29,7 @@ int main(int argc, char **argv)
 			if (errno == ENOENT)
 			{
 				char error_msg[] = ": Can't open ";
+
 				write(STDERR_FILENO, argv[0], strlen(argv[0]));
 				write(STDERR_FILENO, error_msg, strlen(error_msg));
 				write(STDERR_FILENO, argv[1], strlen(argv[1]));
